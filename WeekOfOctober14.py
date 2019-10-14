@@ -18,3 +18,12 @@ def archimedes(numSides):
 
 print(archimedes(8))
 print(archimedes(16))
+
+for sides in range(8, 100, 8):
+    print(sides, archimedes(sides))
+
+# experiment with the loop above alongside the actual value of Pi. How many
+# sides does it take to make the two close
+
+# Modify the Archimedes function to take the radius of the circle as a parameter
+# Can you get a better answer more quickly using a larger circle?
