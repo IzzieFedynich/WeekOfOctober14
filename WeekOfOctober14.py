@@ -30,6 +30,8 @@ for sides in range(8, 100, 8):
 # Can you get a better answer more quickly using a larger circle?
 
 # Accumulators
+# accumulators are not an equation they are plugging in the acc for the acc and adding it to the x
+# gradually
 
 acc = 0
 for x in range(1,6):
@@ -38,7 +40,34 @@ for x in range(1,6):
 print(acc)
 
 # compute the sum of the first 100 even numbers
+even_total = 0
+for number in range(1, 100 + 1):
+    if (number % 2 == 0):
+        even_total = even_total + number
+
+print("The Sum of Even Numbers from 1 to 100 = {1}".format(number, even_total))
+
 # compute the sum of the first 50 odd numbers
+odd_total = 0
+for number in range(1, 50 + 1):
+    if (number % 2 == 0):
+        odd_total = odd_total + number
+
+print("The Sum of odd Numbers from 1 to 50 = {1}".format(number, odd_total))
+
+
+# Python Program to find Sum of Even and Odd Numbers from 1 to N
+acc = 0
+for x in range(1,N):
+    acc = acc + x
+
+print(acc)
+
+
+
+
+
+
 # compute the average of the first 100 odd numbers
 # write a function that returns the average of the first N numbers, where
 #   N is a parameter
