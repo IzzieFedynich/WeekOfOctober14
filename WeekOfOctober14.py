@@ -55,26 +55,38 @@ for number in range(1, 50 + 1):
 
 print("The Sum of odd Numbers from 1 to 50 = {1}".format(number, odd_total))
 
-
 # Python Program to find Sum of Even and Odd Numbers from 1 to N
-acc = 0
-for x in range(1,N):
-    acc = acc + x
 
-print(acc)
+maximum = int(input(" Please Enter the Maximum Value : "))
+even_total = 0
+odd_total = 0
 
+for number in range(1, maximum + 1):
+    if (number % 2 == 0):
+        even_total = even_total + number
+    else:
+        odd_total = odd_total + number
 
-
-
-
+print("The Sum of Even Numbers from 1 to {0} = {1}".format(number, even_total))
+print("The Sum of Odd Numbers from 1 to {0} = {1}".format(number, odd_total))
 
 # compute the average of the first 100 odd numbers
+
+
+
 # write a function that returns the average of the first N numbers, where
 #   N is a parameter
+
 # write a function called factorial that computes the product of the first N
 #   numbers, where N is a parameter
+
 # Each number in the Fibonacci sequence is the sum of the previous two numbers
+
 # The first two numbers in the sequence are 1 and. Compute the 10th
 # Fibonacci number
+
+print("the fibonacci sequence numbers are 0, 1, 1, 2, 3, 5, 8, 13, 21, 34 ")
+
 # Write a functions to compute the Nth Fibonacci number, where N is a parameter
+
 # You may assume that N will be greater than or equal to 3
