@@ -105,7 +105,7 @@ print(dogWeight <= 25)
 # equals is an assignment equal to is to compare
 catWeight = 15
 
-# compoud Boolean operatiors
+# compound Boolean operators
 # snf
 # or
 # not-false
@@ -136,4 +136,22 @@ else:
         c = 25
 
 
-print(a,b,c)
+print(a, b, c)
+
+
+d = 85
+e = 72
+f = 44
+ans = 0
+
+if d > e:
+    ans= 12
+else:
+    if d == e:
+        ans = 50
+    else:
+        if f < d * e:
+            ans = 100
+        else:
+            ans = 75
+print(ans)
