@@ -57,15 +57,7 @@ print("The Sum of odd Numbers from 1 to 50 = {1}".format(number, odd_total))
 
 # Python Program to find Sum of Even and Odd Numbers from 1 to N
 
-maximum = int(input(" Please Enter the Maximum Value : "))
-even_total = 0
-odd_total = 0
 
-for number in range(1, maximum + 1):
-    if (number % 2 == 0):
-        even_total = even_total + number
-    else:
-        odd_total = odd_total + number
 
 print("The Sum of Even Numbers from 1 to {0} = {1}".format(number, even_total))
 print("The Sum of Odd Numbers from 1 to {0} = {1}".format(number, odd_total))
@@ -90,3 +82,58 @@ print("the fibonacci sequence numbers are 0, 1, 1, 2, 3, 5, 8, 13, 21, 34 ")
 # Write a functions to compute the Nth Fibonacci number, where N is a parameter
 
 # You may assume that N will be greater than or equal to 3
+
+print( )
+print( )
+
+# A Monte Carlo Simulation
+
+import random
+
+print(random.random())
+
+# Boolean expresions
+# > greater than
+# >= greater than or equal to
+# < less than
+# <= less than or equal to
+# == the same as [ equal to ]
+# != NOT equal to
+
+dogWeight = 25
+print(dogWeight <= 25)
+# equals is an assignment equal to is to compare
+catWeight = 15
+
+# compoud Boolean operatiors
+# snf
+# or
+# not-false
+
+print( )
+print( catWeight < 20)
+
+# Decision Making -- Selection statements
+a = 5
+b = 10
+c = 75
+
+if a <= b:
+    c = 45
+
+print(c)
+
+
+if a > b:
+    c = 45
+    if b> c:
+        a = 25
+    else:
+        a = -25
+else:
+    c = 1050
+    if b== a:
+        c = 25
+
+
+print(a,b,c)
