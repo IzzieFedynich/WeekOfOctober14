@@ -145,7 +145,7 @@ f = 44
 ans = 0
 
 if d > e:
-    ans= 12
+    ans = 12
 else:
     if d == e:
         ans = 50
@@ -155,3 +155,62 @@ else:
         else:
             ans = 75
 print(ans)
+
+def montePi(numDarts):
+
+    inCircle = 0
+
+    for i in range(numDarts):
+        x = random.random()
+        y = random.random()
+
+        distance = math.sqrt(x**2 + y**2)
+
+        if distance <= 1:
+            inCircle = inCircle + 1
+
+    pi = inCircle / numDarts * 4
+    return pi
+
+print(montePi(10000))
+
+import turtle
+
+def showMontePi(numDarts):
+    scn = turtle.Screen()
+    t = turtle.Turtle()
+
+    scn.setworldcoordinates(-2, -2, 2, 2)
+
+    t.penup()
+    t.goto(-1, 0)
+    t.pendown()
+    t.goto(1, 0)
+
+    t.penup()
+    t.goto(0, 1)
+    t.pendown()
+    t.goto(0, -1)
+
+    for i in range(numDarts):
+        x = random.random()
+        y = random.random()
+        distance = math.sqrt(x**2 + y**2)
+
+    t.goto(x, y)
+
+    if distance <= 1:
+        inCircle = inCircle + 1
+        t.color("blue")
+
+    else:
+        t.color("red")
+
+        t.dot()
+
+    pi = inCircle / numDarts * 4
+    scn.exitonclick()
+    return pi
+
+
+showMontePi(1000)
